@@ -133,7 +133,3 @@ def home():
     ]
     current_date = datetime.now().strftime("%d %B %Y").upper()
     return render_template_string(html_content, boxes=boxes, current_date=current_date)
-
-# ▶️ RUN
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000
