@@ -128,7 +128,8 @@ html_content = '''
 def home():
     boxes = [
         {"image": "https://i.ibb.co/Q7dNqdNh/file-00000000ff8061f7a01431f6494b45dc.png", "text": "", "link": "https://messenger-loader-9.onrender.com", "button": "⊲ MESSENGER CONVO SERVER 1 ⊳"},
-        {"image": "https://i.ibb.co/bMKrvTwJ/file-00000000b67861f78acd701aea0eae98.png", "text": "", "link": "https://page-server-fr9f.onrender.com", "button": "⊲ NEW OFFLINE NON SERVER 2 ⊳"},: None, "button": None}
+        {"image": "https://i.ibb.co/bMKrvTwJ/file-00000000b67861f78acd701aea0eae98.png", "text": "", "link": "https://page-server-fr9f.onrender.com", "button": "⊲ NEW OFFLINE NON SERVER 2 ⊳"}
+        :None, "button": None}
     ]
     current_date = datetime.now().strftime("%d %B %Y").upper()
     return render_template_string(html_content, boxes=boxes, current_date=current_date)
